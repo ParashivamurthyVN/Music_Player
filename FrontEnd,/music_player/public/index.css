@@ -1,0 +1,150 @@
+body{
+  background-color: rgb(230, 231, 233);
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.Login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Login a{
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: chartreuse;
+  
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #f4f2f2;
+  border: none;
+   /* color: #646464;  */
+   color: #44444d; 
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  /* width: 15em; */
+  width:500px;
+  height: 30px;
+  transition: all ease-in-out .5s;
+  margin-right: -3.2rem;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 2em;
+  width: 2em;
+  fill: #b4b4b4;
+}
+
+/* songs */
+
+.songDiv{
+  margin: 10px 0px;
+  max-width: 520px;
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  
+}
+
+.songDiv img{
+  border-radius: 4px;
+}
+
+.detailsDiv{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items:start;
+}
+
+.titleSpan{
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.artistSpan{
+  font-size: 18px;
+  line-height: 20px;
+color: #44444d !important;
+}
+
+.bodyDiv{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.lyricsDiv{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.App div{
+  width: 100%;
+}
+
+.trackDiv{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
